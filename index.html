@@ -1,0 +1,33 @@
+EL SERVIDOR ESTA FUNCIONANDO
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Galaxia</title>
+    <style>
+        body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: black; }
+        canvas { border: 1px solid white; }
+        #gameOverMenu, #mainMenu { display: none; text-align: center; color: white; }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <!-- Menú principal -->
+    <div id="mainMenu">
+        <h2>Juego de Galaxia</h2>
+        <button id="start-btn">Iniciar Juego</button>
+    </div>
+
+    <!-- Pantalla Game Over -->
+    <div id="gameOverMenu">
+        <h2>Game Over</h2>
+        <p>Puntaje Final: <span id="final-score">0</span></p>
+        <button id="restart-btn">Reiniciar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>                                        
